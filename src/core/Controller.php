@@ -3,12 +3,13 @@ namespace Project\Core;
 
 Class Controller {
 
-    // public function model($model) {
+    public function model($model) {
 
-
-    //     require_once '../app/models/' . $model . '.php';
-    //     return new $model;
-    // }
+        $baseDirectory = dirname(__DIR__, 2);
+        require_once $baseDirectory.'/src/models/' . $model . '.php';
+        echo $baseDirectory.'/src/models/' . $model . '.php';
+        return new $model;
+    }
 
     public function view($view, $data=[]) {
 

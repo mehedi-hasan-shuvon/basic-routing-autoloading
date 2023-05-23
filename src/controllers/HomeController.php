@@ -1,9 +1,17 @@
 <?php 
 namespace Project\Controllers;
 
-class HomeController {
+use Project\Core\Controller;
+
+class HomeController extends Controller {
     public function index() {
-        echo 'Home Page';
+      
+        $data=[
+            'name'=>'John',
+            'age'=>30
+        ];
+
+        $this->view('home', $data);
     }
 }
 

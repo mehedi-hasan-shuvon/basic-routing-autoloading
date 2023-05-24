@@ -8,7 +8,7 @@
 
     $cityList = str_replace('"', "'", $cityList);
 
-    print_r($cityList);
+
 
 
 

@@ -63,7 +63,7 @@ class HomeController extends Controller {
     public function fetchUser(){
         $userList= $this->userModel->getUsers();
         
-      
+        print_r($userList);
 
         return $userList;
     }

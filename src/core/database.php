@@ -2,13 +2,12 @@
 
 namespace Project\Core;
 
-class Database{
+use Project\Config\Config;
 
-    //Database credentials
-    private $db_host='localhost';
-    private $db_user='root';
-    private $db_pass='';
-    private $db_name='ooptest';
+
+class Database extends Config{
+
+
 
     // private $mysqli="";
     private $result=array();
